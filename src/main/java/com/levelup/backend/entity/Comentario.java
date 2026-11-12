@@ -21,10 +21,6 @@ public class Comentario {
     private LocalDateTime fechaComentario;
 
     @ManyToOne
-    @JoinColumn(name = "id_noticia", nullable = false)
-    private Noticia noticia;
-
-    @ManyToOne
-    @JoinColumn(name = "id_usuario", nullable = false)
+    @JoinColumn(name = "id_usuario", nullable = true)
     private Usuario usuario;
 }
